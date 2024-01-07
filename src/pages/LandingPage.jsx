@@ -3,7 +3,7 @@ import { CiMenuFries } from "react-icons/ci";
 function LandingPage() {
   return (
     <>
-      <div className="h-svh w-full bg-[url(src/assets/hero-cover.jpg)] bg-center bg-cover bg-no-repeat relative overflow-hidden">
+      <div className="h-svh w-full bg-[url(/static/images/hero-cover.jpg)] bg-center bg-cover bg-no-repeat relative overflow-hidden">
         <div className="h-svh bg-black bg-opacity-60 -z-10"></div>
         <header className="min-h-20 bg-transparent w-full fixed z-[100] top-0 left-0">
           <nav className="min-h-20 flex items-center w-full max-w-5xl justify-between px-5 mx-auto">
