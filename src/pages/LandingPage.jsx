@@ -3,14 +3,17 @@ import { CiMenuFries } from "react-icons/ci";
 function LandingPage() {
   return (
     <>
-      <div className="h-svh w-full bg-[url(/static/images/hero-cover.jpg)] bg-center bg-cover bg-no-repeat relative overflow-hidden">
-        <div className="h-svh bg-black bg-opacity-60 -z-10"></div>
+      <div className="h-[170svh] md:h-svh w-full bg-[url(/static/images/hero-cover.jpg)] bg-center bg-cover bg-no-repeat relative">
+        <div className="h-[170svh] md:h-svh bg-black bg-opacity-60 -z-10"></div>
         <header className="min-h-20 bg-transparent w-full fixed z-[100] top-0 left-0">
           <nav className="min-h-20 flex items-center w-full max-w-5xl justify-between px-5 mx-auto">
             <a href="#" className="text-white font-bold text-2xl">
               GlobeX
             </a>
-            <CiMenuFries className="md:hidden text-white text-2xl" fontWeight={700}/>
+            <CiMenuFries
+              className="md:hidden text-white text-2xl"
+              fontWeight={700}
+            />
             <div className="hidden md:flex gap-6 text-white">
               <a href="#">Home</a>
               <a href="#">Product</a>
@@ -48,6 +51,11 @@ function LandingPage() {
                 </button>
               </div>
             </div>
+          </section>
+          <section className="flex flex-col md:flex-row items-center gap-7 relative bottom-16 px-5">
+            <div className="bg-white w-3/4 h-[20svh] md:h-[30svh]"></div>
+            <div className="bg-white w-3/4 h-[20svh] md:h-[30svh]"></div>
+            <div className="bg-white w-3/4 h-[20svh] md:h-[30svh]"></div> 
           </section>
         </main>
       </div>

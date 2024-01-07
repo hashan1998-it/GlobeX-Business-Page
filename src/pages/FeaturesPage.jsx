@@ -2,7 +2,7 @@
 
 function FeaturesPage() {
   return (
-    <div className='bg-red-200 h-svh'>FeaturesPage</div>
+    <div className='bg-red-200 h-svh'></div>
   )
 }
 
