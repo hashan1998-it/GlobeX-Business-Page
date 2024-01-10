@@ -11,10 +11,10 @@ function Navbar() {
   //const breakpoint = 768; 
   // Only on NavbarItemsLayout,NavbarMobileItemsLayout,NavbarHamburgerMenu
 
-  const [isClicked, setIsClicked] = useState(false);
+  const [isHamburgerClicked, setIsHamburgerClicked] = useState(false);
 
   const handleHamburgerClick = () => {
-    setIsClicked(!isClicked);
+    setIsHamburgerClicked(prev=>!prev);
   }
   return (
     <NavbarLayout bgColor={"bg-transparent"}>
@@ -25,7 +25,7 @@ function Navbar() {
         <NavbarItem>Contact</NavbarItem>
       </NavbarItemsLayout>
       <NavbarHamburgerMenu handleClick={handleHamburgerClick}/>
-      <NavbarMobileItemsLayout top={"top-16"} isShown={isClicked} bgColor={"bg-transparent"}>
+      <NavbarMobileItemsLayout top={"top-16"} isHamburgerClicked={isHamburgerClicked} bgColor={"bg-transparent"}>
         <NavbarItem>Home</NavbarItem>
         <NavbarItem>About</NavbarItem>
         <NavbarItem>Contact</NavbarItem>
